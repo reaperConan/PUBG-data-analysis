@@ -1,0 +1,49 @@
+---
+title: "PUBG-data-analysis"
+author: "Naiqing Cai, Hao Pan, Qintao Ying, Yuchen Zeng"
+date: "12/8/2019"
+output: html_document
+---
+
+# Introduction
+
+The main goal of analyzing the PUBG data is to provide some advice for PUBG players to get a higher rank in each match and detect the cheaters. We will analyze the properties, advantages of different kinds of weapons, the relationship between walking, driving speed and the team rank. In addition, we will analyze death records that survive for less than 4 minutes to provide players with some suggestions to avoid a bad gaming experience.
+
+Our dataset consists of two zips: aggregate and deaths. The CSV files in deaths folder record every death that occurred in a total of 720 thousand matches. Each file provides the information of victim and killer such as their name, position, weapon. Each player's statistics in all matches are summerized in CSV files in the aggregate folder. The files contain match id, team placement, damage, etc.
+
+# Data Analysis 
+
+We use HPC to process the data in the death folder to obtain a summary table for weapons. This table summarizes the 95\% confidence interval for attack distance and frequency of all the weapons. According to the table, cheaters can be detected. For example, some players knock down players from a long distance with their fists. This kind of special behavior is recognized as cheaters. In addition, we can use this table to understand the applicable attack range of different weapons. We also draw two death maps to visualize where the highest mortality rates were, summarizing the areas that are prone to death in the first four minutes.
+
+Based on user data in the aggregate folder, we build a model to predict the probability of player becoming the top ten. We select walking speed, driving speed, player damage and player kills as predict variables, and set the team placement as the response variable. Considering the different scope of team arrangements under different party size models, the competition data is divided into three categories based on the party size. We use adaboost, knn, random forest and logistic regression to fit the model, respectively. The prediction accuracy is shown as follows. Random forest method performs best not only on the accuracy and computation speed, but also on generating a meaningful feature importance sequence that can be used for strategy analysis. 
+
+```{r echo = FALSE}
+acc = data.frame('random forest' = c('96.84%', '94.32%', '92.63%'),
+                 'knn' = c('96.81%', '94.95%', '93.09%'),
+                 'adaboost' = c('96.45%', '90.42%', '90.26%'),
+                 'logistic regression' = c('77.32%', '69.48%', '75.15%'))
+row.names(acc) = c('party size 1', 'party size 2', 'party size 4')
+acc
+```
+
+# Conclusion
+
+![](image/winner_top_ten_weapon_er.jpg)
+
+
+* The most popular weapon used by the winner is M416, followed by SCAR-L, M16A4, AKM, according to figure above. The most popular sniper rifle is Kar98k. Rifles are more popular than sniper rifles.
+
+![Death Map](image/heatmap_erangel_fourmin.jpg)
+![Death Map](image/heatmap_miramar_fourmin.jpg)
+
+* For erangel map, the areas with the highest mortality rates are Roznok and Sosnovka Military Base, followed by other large towns. As for miramar map, Pecado and San Martin have the highest mortality rate. Novices who want to survive longer should avoid these areas. 
+
+* Generally speaking, high rank players tend to kill more players, cause more damage, walk and drive faster to other players than low rank players. This is to say, to achieve higher rank, players are encouraged to move and shoot instead of staying somewhere and waiting for other players killing each other. For different party size, the key aspects that affect the ranking most are different. For party size 1 players, it is player kills and player damage that count. For party size 2 players, average driving speed and player are most important. For party size 4 players, players should focus more on two average moving speed.
+
+
+
+
+
+
+
+
