@@ -28,17 +28,17 @@ acc
 
 # Conclusion
 
-![](image/winner_top_ten_weapon_er.jpg)
+![](../Image/winner_top_ten_weapon_er.jpg)
 
 
 * The most popular weapon used by the winner is M416, followed by SCAR-L, M16A4, AKM, according to figure above. The most popular sniper rifle is Kar98k. Rifles are more popular than sniper rifles.
 
-![Death Map](image/heatmap_erangel_fourmin.jpg)
-![Death Map](image/heatmap_miramar_fourmin.jpg)
+![Death Map](../Image/heatmap_erangel_fourmin.jpg)
+![Death Map](../Image/heatmap_miramar_fourmin.jpg)
 
 * For erangel map, the areas with the highest mortality rates are Roznok and Sosnovka Military Base, followed by other large towns. As for miramar map, Pecado and San Martin have the highest mortality rate. Novices who want to survive longer should avoid these areas. 
 
-* Generally speaking, high rank players tend to kill more players, cause more damage, walk and drive faster to other players than low rank players. This is to say, to achieve higher rank, players are encouraged to move and shoot instead of staying somewhere and waiting for other players killing each other. For different party size, the key aspects that affect the ranking most are different. For party size 1 players, it is player kills and player damage that count. For party size 2 players, average driving speed and player are most important. For party size 4 players, players should focus more on two average moving speed.
+* Generally speaking, high rank players tend to kill more players, cause more damage, walk and drive faster to other players than low rank players. This is to say, to achieve higher rank, players are encouraged to move and shoot instead of staying somewhere and waiting for other players killing each other. For different party size, the key aspects that affect the ranking most are different. For party size 1 players, it is player kills and player damage that count. For party size 2 players, average driving speed and player damage are most important. For party size 4 players, players should focus more on two average moving speed.
 
 
 
