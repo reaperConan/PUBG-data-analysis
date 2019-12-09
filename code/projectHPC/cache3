@@ -1,0 +1,5 @@
+cheater_era3.csv cheater_era5.csv cheater_mir3.csv cheater_mir5.csv erangel.csv erangel_weapon3.csv erangel_weapon5.csv mirama.csv mirama_weapon3.csv mirama_weapon5.csv
+Traceback (most recent call last):
+  File "merge.py", line 9, in <module>
+    for weapon in list(set(list(kill_df.weapon))):
+AttributeError: 'list' object has no attribute 'weapon'

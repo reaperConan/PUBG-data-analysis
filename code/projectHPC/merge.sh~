@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo $(ls)
+cat summary/erangel_*.csv > summary/erangel.csv
+cat summary/mirama*.csv > summary/mirama.csv
+python merge.py

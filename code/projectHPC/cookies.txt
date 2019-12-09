@@ -1,0 +1,16 @@
+# HTTP Cookie File downloaded with cookies.txt by Genuinous @genuinous
+# This file can be used by wget, curl, aria2c and other standard compliant tools.
+# Usage Examples:
+#   1) wget -x --load-cookies cookies.txt "https://www.kaggle.com/skihikingkevin/pubg-match-deaths"
+#   2) curl --cookie cookies.txt "https://www.kaggle.com/skihikingkevin/pubg-match-deaths"
+#   3) aria2c --load-cookies cookies.txt "https://www.kaggle.com/skihikingkevin/pubg-match-deaths"
+#
+www.kaggle.com	FALSE	/skihikingkevin	FALSE	1589516219	ACCEPTED_COOKIES	true
+.kaggle.com	TRUE	/	FALSE	1638242381	_ga	GA1.2.804307401.1573791286
+www.kaggle.com	FALSE	/	FALSE	1589550654	ka_sessionid	e0be79f44caff94f0115c9b9609aac42e262a0ac
+www.kaggle.com	FALSE	/	TRUE	1577762367	.ASPXAUTH	CAF2760B9E402EAB6512F19936447A07C81D4A5C1135A5652CF2297A3E31B1C528BB1CB3A1BF84E389C5817D4E4ECC35EC020CFA003B856C6A23D047D284CCBD07E2C66D046B3516153335E6B165BA039E45A5F4
+www.kaggle.com	FALSE	/	FALSE	0	GCLB	CLO0zK-plN_6kgE
+www.kaggle.com	FALSE	/	TRUE	0	CSRF-TOKEN	CfDJ8LdUzqlsSWBPr4Ce3rb9VL8NUfdmPoBYBNxstwf2ASEb3RdCdxLpxxMt3VIvjmbemok7_qlWkC5s5R2l8699SQUhIEJCSpov79H7G5qsZZEdgdPImifitin_EaY5kB-ExEa2QYVTbnY9ap6U70tmITA
+.kaggle.com	TRUE	/	FALSE	1575256781	_gid	GA1.2.1659830776.1575170379
+www.kaggle.com	FALSE	/	FALSE	0	XSRF-TOKEN	CfDJ8LdUzqlsSWBPr4Ce3rb9VL9wgj72R4gjIZevtXzD2muLuv61HVFWb3PU7AUgDTPHWB1tKdDR6UlJl9NPgRBjNPmkLDyLvw5ECEZEwhMKsRVCcG1ecQ_yKVVCAbzB0AO7vUXJjKjubiRTaO-7RmsHGMNE3tFh1YBkMU9yYFTXeiYeQSANb70EF6DW46xZp973yg
+.kaggle.com	TRUE	/	FALSE	1575170442	_gat_gtag_UA_12629138_1	1

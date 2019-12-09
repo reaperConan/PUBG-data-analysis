@@ -1,0 +1,4 @@
+  File "merge.py", line 14
+    except:
+         ^
+SyntaxError: invalid syntax
