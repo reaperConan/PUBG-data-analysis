@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 <meta name="author" content="Naiqing Cai, Hao Pan, Qintao Ying, Yuchen Zeng" />
@@ -269,7 +270,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -343,18 +343,6 @@ summary {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
@@ -388,7 +376,7 @@ $(document).ready(function () {
 </div>
 <div id="data-analysis" class="section level1">
 <h1>Data Analysis</h1>
-<p>We use HPC to process the data in the death folder to obtain a summary table for weapons. This table summarizes the 95% confidence interval for attack distance and frequency of all the weapons. According to the table, cheaters can be detected. For example, some players knock down players from a long distance with their fists. This kind of special behavior is recognized as cheaters. In addition, we can use this table to understand the applicable attack range of different weapons. We also draw two death maps to visualize where the highest mortality rates were, summarizing the areas that are prone to death in the first four minutes.</p>
+<p>We use HPC to process the data in the death folder to obtain a summary table for weapons. We split each file into 4 smaller files and request 2600M memory for each task. We use the default option of disk and request 4 cpus. This table summarizes the 95% confidence interval for attack distance and frequency of all the weapons. According to the table, cheaters can be detected. For example, some players knock down players from a long distance with their fists. This kind of special behavior is recognized as cheaters. In addition, we can use this table to understand the applicable attack range of different weapons. We also draw two death maps to visualize where the highest mortality rates were, summarizing the areas that are prone to death in the first four minutes.</p>
 <p>Based on user data in the aggregate folder, we build a model to predict the probability of player becoming the top ten. We select walking speed, driving speed, player damage and player kills as predict variables, and set the team placement as the response variable. Considering the different scope of team arrangements under different party size models, the competition data is divided into three categories based on the party size. We use adaboost, knn, random forest and logistic regression to fit the model, respectively. The prediction accuracy is shown as follows. Random forest method performs best not only on the accuracy and computation speed, but also on generating a meaningful feature importance sequence that can be used for strategy analysis.</p>
 <pre><code>##              random.forest    knn adaboost logistic.regression
 ## party size 1        96.84% 96.81%   96.45%              77.32%
@@ -425,6 +413,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
