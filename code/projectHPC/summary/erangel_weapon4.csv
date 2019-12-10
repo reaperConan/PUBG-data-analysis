@@ -1,0 +1,54 @@
+weapon,mean distance,standard deviation,lower bound,upper bound,frequency
+Aquarail,4761.177423427926,1529.0282780538705,174.09258926631537,9348.262257589537,14
+S686,,,,,185051
+Grenade,,,,,131028
+M416,,,,,820988
+Mini 14,,,,,235162
+Motorbike,,,,,6553
+DP-28,,,,,24524
+Hit by Car,,,,,68190
+R45,,,,,26
+S1897,,,,,325128
+M24,,,,,22269
+Kar98k,,,,,191634
+RedZone,,,,,9601
+VSS,,,,,18449
+Micro UZI,,,,,148956
+Tommy Gun,,,,,93460
+AUG,,,,,3356
+P1911,,,,,86542
+Crowbar,,,,,3147
+Down and Out,,,,,1256186
+Mk14,,,,,9228
+Vector,,,,,42876
+Groza,,,,,24704
+death.RedZoneBomb_C,,,,,50
+death.ProjMolotov_C,,,,,168
+Falling,,,,,82555
+death.ProjMolotov_DamageField_C,,,,,4744
+death.Buff_FireDOT_C,,,,,1884
+S12K,,,,,168457
+M16A4,,,,,694766
+UMP9,,,,,404525
+Bluezone,,,,,355469
+Pan,,,,,10173
+death.WeapSawnoff_C,,,,,44
+Drown,,,,,31951
+Boat,,,,,1147
+Sickle,,,,,2830
+SCAR-L,,,,,675908
+AWM,,,,,16154
+R1895,,,,,24738
+P18C,,,,,9009
+Buggy,,,,,5040
+Punch,,,,,200490
+Crossbow,,,,,12749
+M249,,,,,17419
+death.PlayerMale_A_C,,0.0,,,1
+P92,,,,,83085
+AKM,,,,,630661
+Motorbike (SideCar),,,,,7422
+Machete,,,,,3573
+Uaz,,,,,29799
+SKS,,,,,167265
+Dacia,,,,,12877

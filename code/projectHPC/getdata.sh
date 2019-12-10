@@ -20,16 +20,18 @@ if [ ! -z summary ];then
     mkdir summary
 fi
 
-n=$(echo $(($(cat pubg-match-deaths/deaths/kill_match_stats_final_2.csv | wc -l) /3)))
+n=$(echo $(($(cat pubg-match-deaths/deaths/kill_match_stats_final_2.csv | wc -l) /4)))
 cat pubg-match-deaths/deaths/kill_match_stats_final_2.csv | tail +$n > pubg-match-deaths/deaths/kill_2.csv
 cat pubg-match-deaths/deaths/kill_match_stats_final_2.csv | head -n $n > pubg-match-deaths/deaths/kill_3.csv
-cat pubg-match-deaths/deaths/kill_match_stats_final_2.csv | head -n $(($n*2)) | tail +$(($n*2)) > pubg-match-deaths/deaths/kill_1.csv
+cat pubg-match-deaths/deaths/kill_match_stats_final_2.csv | head -n $(($n*2)) | tail +$n > pubg-match-deaths/deaths/kill_1.csv
+cat pubg-match-deaths/deaths/kill_match_stats_final_2.csv | head -n $(($n*3)) | tail +$(($n*2)) > pubg-match-deaths/deaths/kill_7.csv
 
 n=$(echo $(($(cat pubg-match-deaths/deaths/kill_match_stats_final_3.csv | wc -l) /3)))
 cat pubg-match-deaths/deaths/kill_match_stats_final_3.csv | tail +$n > pubg-match-deaths/deaths/kill_4.csv
 cat pubg-match-deaths/deaths/kill_match_stats_final_3.csv | head -n $n > pubg-match-deaths/deaths/kill_5.csv
 
-cat pubg-match-deaths/deaths/kill_match_stats_final_3.csv | head -n $(($n*2)) | tail +$(($n*2)) > pubg-match-deaths/deaths/kill_6.csv
+cat pubg-match-deaths/deaths/kill_match_stats_final_3.csv | head -n $(($n*2)) | tail +$n > pubg-match-deaths/deaths/kill_6.csv
+cat pubg-match-deaths/deaths/kill_match_stats_final_3.csv | head -n $(($n*3)) | tail +$(($n*2)) > pubg-match-deaths/deaths/kill_8.csv
 
 
 

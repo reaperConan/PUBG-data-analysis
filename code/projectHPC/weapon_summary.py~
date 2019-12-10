@@ -9,7 +9,7 @@ import csv,math,os,sys
 import statistics as stat
 
 print(sys.argv[1])
-kill_df = pd.read_csv('pubg-match-deaths/deaths/'+'kill_'+str(sys.argv[1])+'.csv')
+# kill_df = pd.read_csv('pubg-match-deaths/deaths/'+'kill_'+str(sys.argv[1])+'.csv')
 
 
 # In[3]:
@@ -67,8 +67,8 @@ mir_weapon_list = list(set(mir_kill_summary_pd[0]))
 # In[42]:
 jinzhan = ['Aquarall', 'Crowbar', 'Punch', 'Hit by Car', 'Pan', 'Machete', 'Sickle']
 shouqiang = ['P1911', 'P18C', 'P92', 'R45', 'R1895']
-# try:
-if True:
+try:
+#if True:
     weapon_e_dis_list = []
     for w in e_weapon_list:            
         try:
@@ -92,8 +92,8 @@ if True:
     era_cheat = pd.DataFrame(list(filter(detect_cheating_era,e_kill_summary)))
     era_cheat.columns = ['weapon', 'map', 'distance', 'killer name']
     era_cheat.to_csv(os.path.join('summary','cheater_era'+str(sys.argv[1])+'.csv'))
-# except:
-#     print('no erangle')
+except:
+    print('no erangle')
 
 
 try:
